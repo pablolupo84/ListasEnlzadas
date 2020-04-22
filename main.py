@@ -29,6 +29,10 @@ if __name__ == '__main__':
 	print('delete_element_by_value')
 	my_list.delete_element_by_value(6)
 	my_list.printList()
+	my_list.insert_as_first("nombre")
+
+	print(my_list.all_type(1))
+	
 
 
 	# for item in my_list:

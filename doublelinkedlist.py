@@ -144,3 +144,17 @@ class DoubleLinkedList:
 				n.prev_node.next_node = None
 			else:
 				print("Element not found")
+
+	def all_type(self,tipo_dato):
+		resultado=True
+		if self.__first == None:
+			print("Lista vacia")
+		else:
+			n = self.__first
+			while n is not None:
+				if type(n.value) is not type(tipo_dato):
+					resultado=False
+					break
+				else:
+					n = n.next_node
+		return resultado
