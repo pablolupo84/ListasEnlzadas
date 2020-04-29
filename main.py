@@ -1,39 +1,18 @@
 import random
 
-from doublelinkedlist import DoubleLinkedList
+from Clases_linkedlist import *
 
-if __name__ == '__main__':
-	my_list = DoubleLinkedList()
-	data=[random.randint(10,15) for i in range(10)]
+my_lista_1=LinkedList()
 
-	print (data)
-	for value in data:
-	 	my_list.insert_as_first(value)
-	# 	my_list.insert_at_end(value)
+my_lista_1.insert(0,1)
+my_lista_1.insert(1,2)
+my_lista_1.insert(2,3)
+my_lista_1.insert(3,4)
+my_lista_1.insert(4,5)
+print(my_lista_1)
 
-	print('insert_after_item')
-	my_list.insert_after_item(10,6)
-	my_list.printList()
-	print('insert_before_item')
-	my_list.insert_before_item(10,6)
-	my_list.printList()
-	print("Longitud: {}".format(len(my_list)))
-	print("---------------")
-	my_list.recorrer_lista()
-	print('delete_at_start')
-	my_list.delete_at_start()
-	my_list.printList()
-	print('delete_at_end')
-	my_list.delete_at_end()
-	my_list.printList()
-	print('delete_element_by_value')
-	my_list.delete_element_by_value(6)
-	my_list.printList()
-	my_list.insert_as_first("nombre")
-
-	print(my_list.all_type(1))
-	
+my_lista_2=my_lista_1.copiar_sin_repetidos()
+print(my_lista_2)
 
 
-	# for item in my_list:
-	# 	print(item)
+
